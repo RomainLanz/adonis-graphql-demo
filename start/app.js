@@ -13,6 +13,7 @@
 const providers = [
   '@adonisjs/framework/providers/AppProvider',
   '@adonisjs/bodyparser/providers/BodyParserProvider',
+  'adonis-graphql/providers/GraphQLProvider',
 ]
 
 /*

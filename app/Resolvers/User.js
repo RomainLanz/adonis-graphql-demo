@@ -1,13 +1,12 @@
 'use strict'
 
-const { GraphError } = require('adonis-graphql')
+const GraphQLError = use('Adonis/Addons/GraphQLError')
 
 const resolvers = {
 
   Query: {
-    async user (_) {
-      console.log(GraphError)
-      console.log(require('adonis-graphql'))
+    async user () {
+      return new GraphQLError('Fail!', [{ message: 'Validation failed' }])
     }
   }
 

@@ -14,6 +14,8 @@
 */
 
 const Route = use('Route')
-const { graphql } = require('adonis-graphql')
+const GraphQLServer = use('Adonis/Addons/GraphQLServer')
 
-Route.route('/', graphql, ['GET', 'POST'])
+Route.route('/', function (context) {
+  return GraphQLServer.handle(context)
+}, ['GET', 'POST'])
