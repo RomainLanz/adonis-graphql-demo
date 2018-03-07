@@ -13,6 +13,9 @@
 const providers = [
   '@adonisjs/framework/providers/AppProvider',
   '@adonisjs/bodyparser/providers/BodyParserProvider',
+  '@adonisjs/lucid/providers/LucidProvider',
+  '@adonisjs/validator/providers/ValidatorProvider',
+
   'adonis-graphql/providers/GraphQLProvider',
 ]
 
@@ -26,6 +29,7 @@ const providers = [
 |
 */
 const aceProviders = [
+  '@adonisjs/lucid/providers/MigrationsProvider',
 ]
 
 /*
